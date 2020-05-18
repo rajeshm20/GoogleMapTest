@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23BF357811A002D01E52378E /* Pods_WefourTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A757E26377A4E3325DFEE36 /* Pods_WefourTestApp.framework */; };
+		63296943DDF33D45E2296C4E /* Pods_WefourTestApp_WefourTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B170F53830B28F11B7CCEA9 /* Pods_WefourTestApp_WefourTestAppUITests.framework */; };
+		91BF0F22B393C84997E9E84B /* Pods_WefourTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6A1B16EAE4045A091271EF /* Pods_WefourTestAppTests.framework */; };
+		F1250883246FCCFE003B4417 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1250882246FCCFE003B4417 /* Model.swift */; };
+		F1250885246FD1F8003B4417 /* neworder.json in Resources */ = {isa = PBXBuildFile; fileRef = F1250884246FD1F7003B4417 /* neworder.json */; };
+		F1250888246FEC82003B4417 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1250887246FEC82003B4417 /* ViewModel.swift */; };
+		F1B9E81A24716B0400DE12A6 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9E81924716B0400DE12A6 /* CustomerDetailsViewController.swift */; };
+		F1F0FF89246FBD2D005A8314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FF88246FBD2D005A8314 /* AppDelegate.swift */; };
+		F1F0FF8B246FBD2D005A8314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FF8A246FBD2D005A8314 /* SceneDelegate.swift */; };
+		F1F0FF8D246FBD2D005A8314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FF8C246FBD2D005A8314 /* ViewController.swift */; };
+		F1F0FF90246FBD2D005A8314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F0FF8E246FBD2D005A8314 /* Main.storyboard */; };
+		F1F0FF93246FBD2D005A8314 /* WefourTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FF91246FBD2D005A8314 /* WefourTestApp.xcdatamodeld */; };
+		F1F0FF95246FBD34005A8314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F0FF94246FBD34005A8314 /* Assets.xcassets */; };
+		F1F0FF98246FBD34005A8314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F0FF96246FBD34005A8314 /* LaunchScreen.storyboard */; };
+		F1F0FFA3246FBD34005A8314 /* WefourTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FFA2246FBD34005A8314 /* WefourTestAppTests.swift */; };
+		F1F0FFAE246FBD34005A8314 /* WefourTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0FFAD246FBD34005A8314 /* WefourTestAppUITests.swift */; };
+		F1F534BB24706A50001D8CAB /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F534B724706A50001D8CAB /* Order+CoreDataProperties.swift */; };
+		F1F534BC24706A50001D8CAB /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F534B824706A50001D8CAB /* Order+CoreDataClass.swift */; };
+		F1F534BD24706A50001D8CAB /* OrderRequest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F534B924706A50001D8CAB /* OrderRequest+CoreDataClass.swift */; };
+		F1F534BE24706A50001D8CAB /* OrderRequest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F534BA24706A50001D8CAB /* OrderRequest+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1F0FF9F246FBD34005A8314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F0FF7D246FBD2D005A8314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1F0FF84246FBD2D005A8314;
+			remoteInfo = WefourTestApp;
+		};
+		F1F0FFAA246FBD34005A8314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F0FF7D246FBD2D005A8314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1F0FF84246FBD2D005A8314;
+			remoteInfo = WefourTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E6A1B16EAE4045A091271EF /* Pods_WefourTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WefourTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A757E26377A4E3325DFEE36 /* Pods_WefourTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WefourTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B170F53830B28F11B7CCEA9 /* Pods_WefourTestApp_WefourTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WefourTestApp_WefourTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F718311EDBAE637B1159141 /* Pods-WefourTestApp-WefourTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestApp-WefourTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81A879B7F6546DC426CE07DD /* Pods-WefourTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WefourTestAppTests/Pods-WefourTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C133FA9A64F1F282E25C816A /* Pods-WefourTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-WefourTestAppTests/Pods-WefourTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEE74C98CD5F440D89E90102 /* Pods-WefourTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestApp.debug.xcconfig"; path = "Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EA1D6E2E062B713A7C38870C /* Pods-WefourTestApp-WefourTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestApp-WefourTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1250882246FCCFE003B4417 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F1250884246FD1F7003B4417 /* neworder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = neworder.json; sourceTree = "<group>"; };
+		F1250887246FEC82003B4417 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F1B9E81924716B0400DE12A6 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
+		F1F0FF85246FBD2D005A8314 /* WefourTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WefourTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F0FF88246FBD2D005A8314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1F0FF8A246FBD2D005A8314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1F0FF8C246FBD2D005A8314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1F0FF8F246FBD2D005A8314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1F0FF92246FBD2D005A8314 /* WefourTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WefourTestApp.xcdatamodel; sourceTree = "<group>"; };
+		F1F0FF94246FBD34005A8314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F0FF97246FBD34005A8314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1F0FF99246FBD34005A8314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F0FF9E246FBD34005A8314 /* WefourTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WefourTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F0FFA2246FBD34005A8314 /* WefourTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WefourTestAppTests.swift; sourceTree = "<group>"; };
+		F1F0FFA4246FBD34005A8314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F0FFA9246FBD34005A8314 /* WefourTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WefourTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F0FFAD246FBD34005A8314 /* WefourTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WefourTestAppUITests.swift; sourceTree = "<group>"; };
+		F1F0FFAF246FBD34005A8314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F534B724706A50001D8CAB /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1F534B824706A50001D8CAB /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1F534B924706A50001D8CAB /* OrderRequest+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderRequest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1F534BA24706A50001D8CAB /* OrderRequest+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderRequest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3BCD45274A3407203EA9BD4 /* Pods-WefourTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WefourTestApp.release.xcconfig"; path = "Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F0FF82246FBD2D005A8314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BF357811A002D01E52378E /* Pods_WefourTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FF9B246FBD34005A8314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BF0F22B393C84997E9E84B /* Pods_WefourTestAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FFA6246FBD34005A8314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63296943DDF33D45E2296C4E /* Pods_WefourTestApp_WefourTestAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A56F2B2900901D9E3436541F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A757E26377A4E3325DFEE36 /* Pods_WefourTestApp.framework */,
+				2B170F53830B28F11B7CCEA9 /* Pods_WefourTestApp_WefourTestAppUITests.framework */,
+				0E6A1B16EAE4045A091271EF /* Pods_WefourTestAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCB0614F16A8CA17B4497578 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEE74C98CD5F440D89E90102 /* Pods-WefourTestApp.debug.xcconfig */,
+				F3BCD45274A3407203EA9BD4 /* Pods-WefourTestApp.release.xcconfig */,
+				2F718311EDBAE637B1159141 /* Pods-WefourTestApp-WefourTestAppUITests.debug.xcconfig */,
+				EA1D6E2E062B713A7C38870C /* Pods-WefourTestApp-WefourTestAppUITests.release.xcconfig */,
+				81A879B7F6546DC426CE07DD /* Pods-WefourTestAppTests.debug.xcconfig */,
+				C133FA9A64F1F282E25C816A /* Pods-WefourTestAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1250886246FD201003B4417 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1B9E81B2472809900DE12A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1250882246FCCFE003B4417 /* Model.swift */,
+				F1F534B824706A50001D8CAB /* Order+CoreDataClass.swift */,
+				F1F534B724706A50001D8CAB /* Order+CoreDataProperties.swift */,
+				F1F534B924706A50001D8CAB /* OrderRequest+CoreDataClass.swift */,
+				F1F534BA24706A50001D8CAB /* OrderRequest+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1B9E81C247280A900DE12A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1250887246FEC82003B4417 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1B9E81D247280CE00DE12A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1F0FF8C246FBD2D005A8314 /* ViewController.swift */,
+				F1B9E81924716B0400DE12A6 /* CustomerDetailsViewController.swift */,
+				F1F0FF8E246FBD2D005A8314 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1B9E81E247280F100DE12A6 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F1F0FF88246FBD2D005A8314 /* AppDelegate.swift */,
+				F1F0FF8A246FBD2D005A8314 /* SceneDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		F1F0FF7C246FBD2D005A8314 = {
+			isa = PBXGroup;
+			children = (
+				F1F0FF87246FBD2D005A8314 /* WefourTestApp */,
+				F1250886246FD201003B4417 /* Resources */,
+				F1F0FFA1246FBD34005A8314 /* WefourTestAppTests */,
+				F1F0FFAC246FBD34005A8314 /* WefourTestAppUITests */,
+				F1F0FF86246FBD2D005A8314 /* Products */,
+				DCB0614F16A8CA17B4497578 /* Pods */,
+				A56F2B2900901D9E3436541F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F0FF86246FBD2D005A8314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F0FF85246FBD2D005A8314 /* WefourTestApp.app */,
+				F1F0FF9E246FBD34005A8314 /* WefourTestAppTests.xctest */,
+				F1F0FFA9246FBD34005A8314 /* WefourTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F0FF87246FBD2D005A8314 /* WefourTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1B9E81E247280F100DE12A6 /* Appdelegate */,
+				F1B9E81D247280CE00DE12A6 /* View */,
+				F1B9E81B2472809900DE12A6 /* Model */,
+				F1B9E81C247280A900DE12A6 /* ViewModel */,
+				F1F0FF94246FBD34005A8314 /* Assets.xcassets */,
+				F1F0FF96246FBD34005A8314 /* LaunchScreen.storyboard */,
+				F1F0FF99246FBD34005A8314 /* Info.plist */,
+				F1F0FF91246FBD2D005A8314 /* WefourTestApp.xcdatamodeld */,
+				F1250884246FD1F7003B4417 /* neworder.json */,
+			);
+			path = WefourTestApp;
+			sourceTree = "<group>";
+		};
+		F1F0FFA1246FBD34005A8314 /* WefourTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1F0FFA2246FBD34005A8314 /* WefourTestAppTests.swift */,
+				F1F0FFA4246FBD34005A8314 /* Info.plist */,
+			);
+			path = WefourTestAppTests;
+			sourceTree = "<group>";
+		};
+		F1F0FFAC246FBD34005A8314 /* WefourTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1F0FFAD246FBD34005A8314 /* WefourTestAppUITests.swift */,
+				F1F0FFAF246FBD34005A8314 /* Info.plist */,
+			);
+			path = WefourTestAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F0FF84246FBD2D005A8314 /* WefourTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F0FFB2246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestApp" */;
+			buildPhases = (
+				4035162979D4C9921FF701ED /* [CP] Check Pods Manifest.lock */,
+				F1F0FF81246FBD2D005A8314 /* Sources */,
+				F1F0FF82246FBD2D005A8314 /* Frameworks */,
+				F1F0FF83246FBD2D005A8314 /* Resources */,
+				80C4700017FF5E4BC10718D4 /* [CP] Embed Pods Frameworks */,
+				04EAAD92889EB2C6253CA971 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WefourTestApp;
+			productName = WefourTestApp;
+			productReference = F1F0FF85246FBD2D005A8314 /* WefourTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1F0FF9D246FBD34005A8314 /* WefourTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F0FFB5246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestAppTests" */;
+			buildPhases = (
+				6CEF357EF88A0F963005A0B8 /* [CP] Check Pods Manifest.lock */,
+				F1F0FF9A246FBD34005A8314 /* Sources */,
+				F1F0FF9B246FBD34005A8314 /* Frameworks */,
+				F1F0FF9C246FBD34005A8314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1F0FFA0246FBD34005A8314 /* PBXTargetDependency */,
+			);
+			name = WefourTestAppTests;
+			productName = WefourTestAppTests;
+			productReference = F1F0FF9E246FBD34005A8314 /* WefourTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1F0FFA8246FBD34005A8314 /* WefourTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F0FFB8246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestAppUITests" */;
+			buildPhases = (
+				40D375365AF7DB22792E61BE /* [CP] Check Pods Manifest.lock */,
+				F1F0FFA5246FBD34005A8314 /* Sources */,
+				F1F0FFA6246FBD34005A8314 /* Frameworks */,
+				F1F0FFA7246FBD34005A8314 /* Resources */,
+				91C5B2B5A203902EF3B3DC3F /* [CP] Embed Pods Frameworks */,
+				F66F938704814C785D2404B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1F0FFAB246FBD34005A8314 /* PBXTargetDependency */,
+			);
+			name = WefourTestAppUITests;
+			productName = WefourTestAppUITests;
+			productReference = F1F0FFA9246FBD34005A8314 /* WefourTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F0FF7D246FBD2D005A8314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Rajesh M";
+				TargetAttributes = {
+					F1F0FF84246FBD2D005A8314 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F1F0FF9D246FBD34005A8314 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F1F0FF84246FBD2D005A8314;
+					};
+					F1F0FFA8246FBD34005A8314 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F1F0FF84246FBD2D005A8314;
+					};
+				};
+			};
+			buildConfigurationList = F1F0FF80246FBD2D005A8314 /* Build configuration list for PBXProject "WefourTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1F0FF7C246FBD2D005A8314;
+			productRefGroup = F1F0FF86246FBD2D005A8314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F0FF84246FBD2D005A8314 /* WefourTestApp */,
+				F1F0FF9D246FBD34005A8314 /* WefourTestAppTests */,
+				F1F0FFA8246FBD34005A8314 /* WefourTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F0FF83246FBD2D005A8314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F0FF98246FBD34005A8314 /* LaunchScreen.storyboard in Resources */,
+				F1F0FF95246FBD34005A8314 /* Assets.xcassets in Resources */,
+				F1F0FF90246FBD2D005A8314 /* Main.storyboard in Resources */,
+				F1250885246FD1F8003B4417 /* neworder.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FF9C246FBD34005A8314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FFA7246FBD34005A8314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04EAAD92889EB2C6253CA971 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4035162979D4C9921FF701ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WefourTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40D375365AF7DB22792E61BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WefourTestApp-WefourTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CEF357EF88A0F963005A0B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WefourTestAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C4700017FF5E4BC10718D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp/Pods-WefourTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C5B2B5A203902EF3B3DC3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F66F938704814C785D2404B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WefourTestApp-WefourTestAppUITests/Pods-WefourTestApp-WefourTestAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F0FF81246FBD2D005A8314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F534BD24706A50001D8CAB /* OrderRequest+CoreDataClass.swift in Sources */,
+				F1F534BB24706A50001D8CAB /* Order+CoreDataProperties.swift in Sources */,
+				F1250883246FCCFE003B4417 /* Model.swift in Sources */,
+				F1F0FF8D246FBD2D005A8314 /* ViewController.swift in Sources */,
+				F1F0FF89246FBD2D005A8314 /* AppDelegate.swift in Sources */,
+				F1F0FF8B246FBD2D005A8314 /* SceneDelegate.swift in Sources */,
+				F1F534BE24706A50001D8CAB /* OrderRequest+CoreDataProperties.swift in Sources */,
+				F1250888246FEC82003B4417 /* ViewModel.swift in Sources */,
+				F1F534BC24706A50001D8CAB /* Order+CoreDataClass.swift in Sources */,
+				F1B9E81A24716B0400DE12A6 /* CustomerDetailsViewController.swift in Sources */,
+				F1F0FF93246FBD2D005A8314 /* WefourTestApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FF9A246FBD34005A8314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F0FFA3246FBD34005A8314 /* WefourTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F0FFA5246FBD34005A8314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F0FFAE246FBD34005A8314 /* WefourTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1F0FFA0246FBD34005A8314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1F0FF84246FBD2D005A8314 /* WefourTestApp */;
+			targetProxy = F1F0FF9F246FBD34005A8314 /* PBXContainerItemProxy */;
+		};
+		F1F0FFAB246FBD34005A8314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1F0FF84246FBD2D005A8314 /* WefourTestApp */;
+			targetProxy = F1F0FFAA246FBD34005A8314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1F0FF8E246FBD2D005A8314 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F0FF8F246FBD2D005A8314 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1F0FF96246FBD34005A8314 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F0FF97246FBD34005A8314 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F0FFB0246FBD34005A8314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1F0FFB1246FBD34005A8314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F0FFB3246FBD34005A8314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE74C98CD5F440D89E90102 /* Pods-WefourTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1F0FFB4246FBD34005A8314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BCD45274A3407203EA9BD4 /* Pods-WefourTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1F0FFB6246FBD34005A8314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A879B7F6546DC426CE07DD /* Pods-WefourTestAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WefourTestApp.app/WefourTestApp";
+			};
+			name = Debug;
+		};
+		F1F0FFB7246FBD34005A8314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C133FA9A64F1F282E25C816A /* Pods-WefourTestAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WefourTestApp.app/WefourTestApp";
+			};
+			name = Release;
+		};
+		F1F0FFB9246FBD34005A8314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F718311EDBAE637B1159141 /* Pods-WefourTestApp-WefourTestAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WefourTestApp;
+			};
+			name = Debug;
+		};
+		F1F0FFBA246FBD34005A8314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1D6E2E062B713A7C38870C /* Pods-WefourTestApp-WefourTestAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WefourTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajesh.WefourTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WefourTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F0FF80246FBD2D005A8314 /* Build configuration list for PBXProject "WefourTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F0FFB0246FBD34005A8314 /* Debug */,
+				F1F0FFB1246FBD34005A8314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F0FFB2246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F0FFB3246FBD34005A8314 /* Debug */,
+				F1F0FFB4246FBD34005A8314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F0FFB5246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F0FFB6246FBD34005A8314 /* Debug */,
+				F1F0FFB7246FBD34005A8314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F0FFB8246FBD34005A8314 /* Build configuration list for PBXNativeTarget "WefourTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F0FFB9246FBD34005A8314 /* Debug */,
+				F1F0FFBA246FBD34005A8314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1F0FF91246FBD2D005A8314 /* WefourTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1F0FF92246FBD2D005A8314 /* WefourTestApp.xcdatamodel */,
+			);
+			currentVersion = F1F0FF92246FBD2D005A8314 /* WefourTestApp.xcdatamodel */;
+			path = WefourTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1F0FF7D246FBD2D005A8314 /* Project object */;
+}
